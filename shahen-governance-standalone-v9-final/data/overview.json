@@ -1,0 +1,46 @@
+{
+  "years": [
+    2022,
+    2023,
+    2024
+  ],
+  "overview": {
+    "shipments": {
+      "2022": 513728,
+      "2023": 10465218,
+      "2024": 10500000
+    },
+    "truckTripsOutsideCities": {
+      "2022": 49000000,
+      "2023": 54000000,
+      "2024": 60000000
+    },
+    "marketValueUSD": {
+      "2022": 5.7,
+      "2023": 6.0,
+      "2024": 6.34
+    },
+    "seriousAccidents": {
+      "2022": 16962,
+      "2023": 16534,
+      "2024": null
+    },
+    "riyadhSharePercent": {
+      "2023": 40,
+      "2024": 40
+    },
+    "lpi": {
+      "rank": 38,
+      "score": 3.4,
+      "year": 2023
+    },
+    "transportCO2SharePercent": {
+      "2022": 26
+    }
+  },
+  "workforce": {
+    "count": 754716,
+    "saudizationPercent": 19.4,
+    "year": 2024
+  }
+}
