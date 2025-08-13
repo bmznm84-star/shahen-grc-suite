@@ -1,1 +1,69 @@
-<!doctype html><meta charset='utf-8'><title>index.html</title><p>index.html — v9 final</p>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>منصة شاهن — لوحة حوكمة القطاع (v11)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">TGA</div>
+        <div class="title">منصة شاهن — لوحة حوكمة القطاع</div>
+      </div>
+      <div class="tools">
+        <select id="yearSelect" class="select"></select>
+        <button id="langBtn" class="btn" aria-label="EN">EN</button>
+        <a class="btn" href="./data.html" target="_blank">البيانات</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <aside class="sidebar" id="sidebar">
+        <div class="side-title">مؤشرات القطاع</div>
+        <div class="kpi"><div class="s">عدد العاملين</div><div class="v" id="kpiWorkforce">—</div></div>
+        <div class="kpi"><div class="s">نسبة السعودة</div><div class="v" id="kpiSaudization">—</div></div>
+        <div class="kpi"><div class="s">حجم السوق</div><div class="v" id="kpiMarket">—</div></div>
+        <hr class="sep"/>
+        <div class="side-title">مراحل تطبيق الحوكمة (GRC)</div>
+        <div id="grcStages" class="small">—</div>
+      </aside>
+
+      <main class="content">
+        <div class="cards">
+          <div class="card">
+            <div class="label">إجمالي الشحنات (مليون)</div>
+            <div class="value" id="shipments">—</div>
+            <div class="small" id="shipmentsNote"></div>
+          </div>
+          <div class="card">
+            <div class="label">حركة الشاحنات (مليون)</div>
+            <div class="value" id="trucks">—</div>
+          </div>
+          <div class="card">
+            <div class="label">الحوادث الجسيمة</div>
+            <div class="value" id="accidents">—</div>
+          </div>
+          <div class="card">
+            <div class="label">حصة المنطقة الشرقية</div>
+            <div class="value" id="eastShare">—</div>
+          </div>
+        </div>
+
+        <div class="chart">
+          <canvas id="trend" height="240"></canvas>
+        </div>
+
+        <div class="footer" id="source"></div>
+      </main>
+    </section>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="./assets/app.js"></script>
+</body>
+</html>

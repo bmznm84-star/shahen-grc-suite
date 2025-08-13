@@ -1,1 +1,15 @@
-{"cleanUrls": true}
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=60"
+        }
+      ]
+    }
+  ]
+}

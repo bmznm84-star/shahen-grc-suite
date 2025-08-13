@@ -1,1 +1,19 @@
-<!doctype html><meta charset='utf-8'><title>data.html</title><p>data.html — v9 final</p>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>عرض البيانات</title>
+<link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body class="container">
+  <h2>ملف البيانات /data/overview.json</h2>
+  <p class="small">للتعديل: حمّل الملف من الريبو وحرّر القيم ثم ارفع من جديد.</p>
+  <pre id="json" style="background:#0b1728;border:1px solid #1c3354;border-radius:12px;padding:16px;overflow:auto;max-height:70vh"></pre>
+  <script>
+    fetch('./data/overview.json').then(r=>r.json()).then(d=>{
+      document.getElementById('json').textContent = JSON.stringify(d, null, 2);
+    });
+  </script>
+</body>
+</html>
